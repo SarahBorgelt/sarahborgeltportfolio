@@ -32,11 +32,11 @@ main {
      overflow-x: hidden;
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: auto 1fr auto;
+     grid-template-rows: auto 2fr auto;
      grid-template-areas:
-          "nav"
-          "main"
-          "footer";
+          "header" "nav"
+          "main" "main"
+          "footer" "footer";
 }
 
 #main-content{
@@ -51,9 +51,29 @@ main {
      align-items: center;
 }
 
-.app-logo {
-     height: 40px;
-     margin-right: 1rem;
+#app-header {
+     grid-area: header;
+     background-color: #b2cbf2;
+     padding: 5px;
+     text-align: center;
+     width: 100vw;       /* full viewport width */
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+#app-header a {
+     text-decoration: none;
+     color: white;
+}
+
+#app-header a:hover {
+     color: #000;
+     cursor: pointer;
+}
+
+#app-header a:visited {
+     color: #000;
 }
 
 #app-footer {

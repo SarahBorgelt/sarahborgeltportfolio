@@ -19,6 +19,7 @@ export default function HomeView() {
                          I am familiar with tools such as pgadmin, SQL Server Management Studio, Visual Studio,
                          and Visual Studio Code. I am also experienced in using Git for version control and collaboration.
                     </p>
+                    <br></br>
                     <p>
                          I am an avid learner and enjoy exploring new technologies and frameworks. 
                          I am also a strong advocate for clean code practices, code reviews, and 
