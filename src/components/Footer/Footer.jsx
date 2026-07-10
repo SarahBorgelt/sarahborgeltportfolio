@@ -1,5 +1,6 @@
 import styles from './Footer.module.css';
 import {useNavigate} from 'react-router-dom';
+import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
      const navigate = useNavigate();
@@ -20,6 +21,33 @@ export default function Footer() {
                     <button className={styles.contactButton} onClick={navigateToContact}>
                          Contact Me
                     </button>
+               </div>
+               <div className={styles.socialLinks}>
+               <a
+                    href="https://www.linkedin.com/in/sarahborgelt/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+               >
+                    <FaLinkedin />
+               </a>
+               <a
+                    href="https://www.facebook.com/sarah.borgelt.5/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+               >
+               <FaFacebook />
+               </a>
+
+               <a
+               href="https://www.instagram.com/borgelts97/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram"
+               >
+               <FaInstagram />
+               </a>
                </div>
                <p className={styles.copyright}>
                     © 2026 Sarah Borgelt. All rights reserved.
