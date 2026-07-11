@@ -1,10 +1,37 @@
 .navbar {
      position: sticky;
      padding: 1.5rem;
+     background-color: #4f79bb; 
 }
 
 .nav {
      display: flex;
      flex-direction: row;
-     justify-content: space-evenly
+     justify-content: space-evenly;
+     background-color: navy;
+     border-radius: 15px;
+     padding: 1rem;
+     align-items: stetch;
+}
+
+.link {
+     color: white;
+     text-decoration: none;
+}
+
+.active {
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+.link:hover {
+     font-weight: bold;
+     text-decoration: underline;
+     cursor: pointer;
+}
+
+.divider {
+     width: 0.05rem;
+     background-color: white;
 }

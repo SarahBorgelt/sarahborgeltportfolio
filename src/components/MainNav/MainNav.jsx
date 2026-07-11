@@ -14,6 +14,7 @@ export default function MainNav() {
                     >
                          Home
                     </NavLink>
+                    <span className={styles.divider}></span>
                     <NavLink 
                          to="/aboutme"
                          className={({ isActive }) => 
@@ -21,6 +22,7 @@ export default function MainNav() {
                     >
                          About Me
                     </NavLink>
+                    <span className={styles.divider}></span>
                     <NavLink 
                          to="/career"
                          className={({ isActive }) => 
@@ -28,6 +30,7 @@ export default function MainNav() {
                     >
                          Career
                     </NavLink>
+                    <span className={styles.divider}></span>
                     <NavLink 
                          to="/philanthropy"
                          className={({ isActive }) => 
@@ -35,6 +38,7 @@ export default function MainNav() {
                     >
                          Philanthropy
                     </NavLink>
+                    <span className={styles.divider}></span>
                     <NavLink 
                          to="/contact"
                          className={({ isActive }) => 
