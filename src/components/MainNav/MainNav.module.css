@@ -6,5 +6,5 @@
 .nav {
      display: flex;
      flex-direction: row;
-     width: fit-content;
+     justify-content: space-evenly
 }

@@ -1,6 +1,6 @@
 import styles from './Footer.module.css';
 import {useNavigate} from 'react-router-dom';
-import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaInstagram , FaGithub} from "react-icons/fa";
 
 export default function Footer() {
      const navigate = useNavigate();
@@ -47,6 +47,14 @@ export default function Footer() {
                     aria-label="Instagram"
                >
                <FaInstagram />
+               </a>
+               <a
+                    href="https://www.github.com/sarahborgelt/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+               >
+               <FaGithub />
                </a>
                </div>
                <p className={styles.copyright}>
