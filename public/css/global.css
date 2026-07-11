@@ -53,7 +53,7 @@ main {
 
 #app-header {
      grid-area: header;
-     background-color: #b2cbf2;
+     background-color: #4f79bb;
      padding: 5px;
      text-align: center;
      width: 100vw;       /* full viewport width */

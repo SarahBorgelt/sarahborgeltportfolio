@@ -1,0 +1,14 @@
+.headerContainer {
+     display: flex;
+     flex-direction: column;
+     max-width: 12rem;
+     margin-left: 2rem;
+     margin-top: 1rem;
+}
+
+.headshot {
+     width: 75%;
+     height: auto;
+     border-radius: 50%;
+     margin-bottom: 1rem;
+}
