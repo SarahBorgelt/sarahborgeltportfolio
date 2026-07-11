@@ -1,9 +1,7 @@
 import styles from './HomeView.module.css';
-import {useNavigate} from 'react-router-dom';
 import ProfessionalHeadershot from '../../assets/ProfessionalHeadshot.png'
 
 export default function HomeView() {
-     const navigate = useNavigate();
 
      return (
           <div className={styles.aboutMe}>
