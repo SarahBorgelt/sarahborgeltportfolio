@@ -11,23 +11,55 @@
 }
 
 .slideImage {
-     width: 35rem;
+     width: 28rem;
      height: auto;
      object-fit: cover;
      border-radius: 1rem;
 }
 
 :global(.swiper) {
-     width: 100%;
-     max-width: 35rem;
-     margin: 0 auto;
+     width: 35rem;
+     flex-shrink: 0;
 }
 
 :global(.swiper-slide) {
      display: flex;
-     justify-content: center;
+     justify-content: left;
 }
 
 .figcaption {
      margin: 1rem;
+}
+
+.descriptionTextAboutMe {
+     font-size: 1.25rem;
+     background-color: navy;
+     border: 0.0625rem solid white;
+     border-radius: 1rem;
+     padding: 2rem;
+     color: white;
+     max-width: 45rem;
+     line-height: 1.6;
+}
+
+.slideshowAndDescription {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 3rem;
+     max-width: 90rem;
+     margin: 0 auto;
+     padding: 2rem;
+}
+
+@media (max-width: 70rem) {
+     .slideshowAndDescription {
+          flex-direction: column;
+     }
+
+     :global(.swiper) {
+          width: 100%;
+          max-width: 35rem;
+     }
 }
