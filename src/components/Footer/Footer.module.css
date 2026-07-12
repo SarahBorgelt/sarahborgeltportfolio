@@ -52,3 +52,15 @@
      color: #b2cbf2;
      transform: translateY(-3px);
 }
+
+.contacticonsectionandcta {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 1rem;
+}
+
+.socialmediainfo {
+     max-width: 40rem;
+     text-align: center;
+}
