@@ -45,7 +45,7 @@ export default function AboutMeView() {
                                              alt="Exploring new environments and embracing unique experiences, including an airboat tour through the Florida Everglades."
                                              className={styles.slideImage}
                                         />
-                                        <figcaption className={styles.caption}>
+                                        <figcaption className={styles.figcaption}>
                                              Exploring new environments and embracing unique experiences, including an airboat tour through the Florida Everglades.
                                         </figcaption>
                                    </figure>
@@ -57,7 +57,7 @@ export default function AboutMeView() {
                                              alt="A love for travel means always making time for iconic experiences — including ice skating at Rockefeller Center."
                                              className={styles.slideImage}
                                         />
-                                        <figcaption className={styles.caption}>
+                                        <figcaption className={styles.figcaption}>
                                              A love for travel means always making time for iconic experiences — including ice skating at Rockefeller Center.
                                         </figcaption>
                                    </figure>
@@ -69,7 +69,7 @@ export default function AboutMeView() {
                                              alt="Spending time outdoors and connecting with nature is one of Sarah's favorite ways to recharge."
                                              className={styles.slideImage}
                                         />
-                                        <figcaption className={styles.caption}>
+                                        <figcaption className={styles.figcaption}>
                                              Spending time outdoors and connecting with nature is one of Sarah's favorite ways to recharge.
                                         </figcaption>
                                    </figure>
