@@ -42,14 +42,15 @@
 }
 
 .philanthropyDescription {
-     font-size: 1.25rem;
+     font-size: 1.15rem;
      background-color: navy;
      border: 0.0625rem solid #4f79bb;
      border-radius: 1rem;
-     padding: 1rem;
+     padding: 1.5rem;
      color: white;
      max-width: 700px;
      border: 0.0625rem solid white;
+     line-height: 1.6;
 }
 
 .philanthropyDescription a {

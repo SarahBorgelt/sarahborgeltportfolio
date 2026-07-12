@@ -7,26 +7,109 @@
      letter-spacing: -0.05rem;
      text-transform: uppercase;
      padding-bottom: 1rem;
+     text-align: left;
 }
 
 .slideImage {
-     width: 35rem;
-     height: auto;
+     width: 32rem;
+     height: 25rem;
      object-fit: cover;
      border-radius: 1rem;
+     display: block;
+     margin: 0 auto;
 }
 
 :global(.swiper) {
-     width: 100%;
-     max-width: 35rem;
-     margin: 0 auto;
+     width: 32rem;
+     height: 34rem;
+     overflow: visible;
+}
+
+:global(.swiper-wrapper) {
+     align-items: flex-start;
 }
 
 :global(.swiper-slide) {
      display: flex;
      justify-content: center;
+     align-items: flex-start;
+     height: auto;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+     color: white;
+     width: 2rem;
+     height: 2rem;
+}
+
+:global(.swiper-button-prev) {
+     left: -3rem;
+}
+
+:global(.swiper-button-next) {
+     right: -3rem;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+     color: white;
+}
+
+:global(.swiper-slide figure) {
+     margin: 0;
+     text-align: center;
+     width: 100%;
+     height: auto;
 }
 
 .figcaption {
-     margin: 1rem;
+     background-color: rgba(0, 0, 128, .15);
+     border-radius: 1rem;
+     padding: 0.75rem;
+     font-style: italic;
+     width: 32rem;
+     margin: 0.75rem auto 0;
+     text-align: center;
+     color: white;
+     line-height: 1.4;
+     box-sizing: border-box;
+}
+
+.descriptionTextAboutMe {
+     font-size: 1.15rem;
+     background-color: navy;
+     border: 0.0625rem solid white;
+     border-radius: 1rem;
+     padding: 1.5rem;
+     color: white;
+     line-height: 1.6;
+}
+
+
+
+.slideshowAndDescription {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: flex-start;
+     gap: 4rem;
+     max-width: 90rem;
+     margin: 0 auto;
+     padding: 2rem;
+}
+
+.aboutMeCompleteView {
+     width: 40rem;
+}
+
+@media (max-width: 70rem) {
+     .slideshowAndDescription {
+          flex-direction: column;
+     }
+
+     :global(.swiper) {
+          width: 100%;
+          max-width: 35rem;
+     }
 }

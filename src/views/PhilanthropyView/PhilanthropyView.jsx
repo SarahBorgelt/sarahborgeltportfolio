@@ -61,9 +61,13 @@ export default function PhilanthropyView() {
                          </ul>
                          <br></br>
                          <p> 
-                              In addition to charitable giving, Sarah Borgelt volunteers with <a href="https://clevelandgivecamp.org/" target="_blank" rel="noopener noreferrer">Cleveland GiveCamp</a>, 
+                              In addition to charitable giving, Sarah Borgelt volunteers annually with <a href="https://clevelandgivecamp.org/" target="_blank" rel="noopener noreferrer">Cleveland GiveCamp</a>, 
                               a nonprofit organization that brings together technology professionals to develop websites and software solutions for local nonprofit 
-                              organizations at no cost. Through this work, she is able to use her technical skills to help community organizations expand their impact 
+                              organizations at no cost. 
+                         </p>
+                         <br></br>
+                         <p>
+                              Through this work, she uses her technical skills to help community organizations expand their impact 
                               and better serve those who rely on them. 
                          </p>
                     </div>
