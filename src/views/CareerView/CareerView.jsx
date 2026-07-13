@@ -45,7 +45,7 @@ export default function CareerView() {
           <>
                <Helmet>
                     <title>
-                         Sarah Borgelt | Career Journey & Professional Experience
+                         Sarah Borgelt | Career Journey and Professional Experience
                     </title>
 
                     <meta
