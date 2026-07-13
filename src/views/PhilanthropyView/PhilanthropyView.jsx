@@ -45,7 +45,7 @@ export default function PhilanthropyView() {
                               In addition to the memorial fund, Sarah actively supports organizations whose missions align with her 
                               personal values. Her charitable giving focuses on a varity of causes, including education, youth leadership, community development, 
                               animal welfare, the performing arts, and equal rights. To date, she has contributed more than $10,000 
-                              to organizations including:
+                              to various organizations including:
                          </p>
                          <ul className={styles.nonprofitlist}>
                               <li><a href='https://www.gsoh.org/' target='_blank' rel="noopener noreferrer">Girl Scouts of America</a></li>
