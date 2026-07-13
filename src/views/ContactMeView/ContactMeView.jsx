@@ -45,46 +45,52 @@ export default function ContactMeView() {
                <>
                <h1 className={styles.title}>Contact Me</h1>
                <form ref={form} onSubmit={sendEmail} className={styles.contactMeForm}>
-                    <input
-                         type="text"
-                         name="first_name"
-                         placeholder="First Name"
-                         required
-                         className={styles.first_name}
-                    />
-
-                    <input
-                         type="text"
-                         name="last_name"
-                         placeholder="Last Name"
-                         required
-                         className={styles.last_name}
-                    />
-
-                    <input
-                         type="tel"
-                         name="user_phone"
-                         placeholder="Phone Number"
-                         required
-                         className={styles.phoneNumber}
-                    />
-
-                    <input
-                         type="email"
-                         name="user_email"
-                         placeholder="Email"
-                         required
-                         className={styles.emailAddress}
-                    />
-
-                    <textarea
-                         name="message"
-                         placeholder="Message"
-                         rows="6"
-                         required
-                         className={styles.message}
-                    />
-
+                    <div className={styles.first_name}>
+                         <label>First Name:</label>
+                         <input
+                              type="text"
+                              name="first_name"
+                              placeholder="First Name"
+                              required
+                         />
+                    </div>
+                    <div className={styles.last_name}>
+                         <label>Last Name:</label>
+                         <input
+                              type="text"
+                              name="last_name"
+                              placeholder="Last Name"
+                              required
+                         />
+                    </div>
+                    <div className={styles.phoneNumber}>
+                         <label>Phone Number:</label>
+                         <input
+                              type="tel"
+                              name="user_phone"
+                              placeholder="Phone Number"
+                              required
+                              
+                         />
+                    </div>
+                    <div className={styles.emailAddress}>
+                         <label>Email Address:</label>
+                         <input
+                              type="email"
+                              name="user_email"
+                              placeholder="Email"
+                              required
+                         />
+                    </div>
+                    <div className={styles.message}>
+                         <label>Please Enter Your Message:</label>
+                         <textarea
+                              name="message"
+                              placeholder="Message"
+                              rows="6"
+                              required
+                         />
+                    </div>
                     <button type="submit" className={styles.submitButton}>
                          Send Message
                     </button>

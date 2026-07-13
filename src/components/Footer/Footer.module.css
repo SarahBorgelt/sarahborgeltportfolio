@@ -35,6 +35,14 @@
      border-radius: 12px;
 }
 
+.contactButton:hover{
+     background: white;
+     color: navy;
+     border: white;
+     cursor: pointer;
+     transition: .25s ease;
+}
+
 .socialLinks {
      display: flex;
      gap: 1.5rem;
