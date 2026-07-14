@@ -11,18 +11,22 @@
 }
 
 .slideImage {
-     width: 32rem;
-     height: 25rem;
+     width: 100%;
+     max-width: 32rem;
+     height: auto;
+     aspect-ratio: 4 / 3;
      object-fit: cover;
      border-radius: 1rem;
      display: block;
      margin: 0 auto;
 }
 
+
 :global(.swiper) {
-     width: 32rem;
-     height: 34rem;
+     width: min(100%, 32rem);
+     height: auto;
      overflow: visible;
+     padding-bottom: 3rem;
 }
 
 :global(.swiper-wrapper) {
@@ -34,6 +38,7 @@
      justify-content: center;
      align-items: flex-start;
      height: auto;
+     padding-bottom: 2rem;
 }
 
 :global(.swiper-button-next),
@@ -63,12 +68,16 @@
      height: auto;
 }
 
+:global(.swiper-pagination) {
+     bottom: -1rem;
+}
+
 .figcaption {
      background-color: rgba(0, 0, 128, .15);
      border-radius: 1rem;
      padding: 0.75rem;
-     font-style: italic;
-     width: 32rem;
+     width: 100%;
+     max-width: 32rem;
      margin: 0.75rem auto 0;
      text-align: center;
      color: white;
@@ -93,23 +102,104 @@
      flex-direction: row;
      justify-content: center;
      align-items: flex-start;
-     gap: 4rem;
+     gap: clamp(2rem, 5vw, 4rem);
      max-width: 90rem;
      margin: 0 auto;
      padding: 2rem;
+     box-sizing: border-box;
 }
 
 .aboutMeCompleteView {
-     width: 40rem;
+     width: min(100%, 40rem);
 }
 
-@media (max-width: 70rem) {
+.aboutMeDescription {
+     margin-bottom: 1.5rem;
+}
+
+/*Mobile phone*/
+@media (max-width: 768px) {
+
      .slideshowAndDescription {
           flex-direction: column;
+          align-items: center;
+          padding: 1rem;
+          gap: 2rem;
      }
+
+
+     .title {
+          font-size: 2rem;
+          text-align: center;
+          padding-bottom: 0.5rem;
+     }
+
+
+     .descriptionTextAboutMe {
+          font-size: 1rem;
+          padding: 1rem;
+          line-height: 1.5;
+     }
+
+
+     .aboutMeCompleteView {
+          width: 100%;
+     }
+
+
+     .slideImage {
+          width: 100%;
+          max-width: 22rem;
+          aspect-ratio: 4 / 3;
+     }
+
 
      :global(.swiper) {
           width: 100%;
-          max-width: 35rem;
+          max-width: 22rem;
+          padding-bottom: 3.5rem;
      }
+
+
+     .figcaption {
+          width: 100%;
+          max-width: 22rem;
+          font-size: 0.9rem;
+          padding: 0.65rem;
+     }
+
+
+     :global(.swiper-button-prev) {
+          left: 0;
+     }
+
+
+     :global(.swiper-button-next) {
+          right: 0;
+     }
+}
+
+/*Small phones*/
+@media (max-width: 400px) {
+
+     .slideImage {
+          max-width: 18rem;
+     }
+
+
+     :global(.swiper) {
+          max-width: 18rem;
+          padding-bottom: 3.5rem;
+     }
+
+
+     .figcaption {
+          max-width: 18rem;
+     }
+
+
+     .descriptionTextAboutMe {
+          font-size: 0.95rem;
+     }
+
 }

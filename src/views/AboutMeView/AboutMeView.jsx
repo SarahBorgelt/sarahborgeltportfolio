@@ -174,7 +174,7 @@ export default function AboutMeView() {
                                         Her career journey has been shaped by curiosity, adaptability, and a commitment to 
                                         continuous growth.
                                    </p>
-                                   <br></br>
+                                   
                                    <p className={styles.aboutMeDescription}>With a background spanning finance, supply chain, and technology, Sarah brings a unique 
                                         perspective to every challenge she encounters. She earned her Bachelor of Science in 
                                         Finance from the University of Findlay and her Master of Business Administration in Finance 
@@ -183,7 +183,7 @@ export default function AboutMeView() {
                                         organizations, where she developed a strong understanding of business operations, process 
                                         optimization, and the importance of data-driven decision-making.
                                    </p>
-                                   <br></br>
+                                   
                                    <p className={styles.aboutMeDescription}>
                                         Sarah's transition into software development began with a desire to continue learning 
                                         and explore new ways to solve problems. After discovering a passion for programming, 
@@ -192,14 +192,14 @@ export default function AboutMeView() {
                                         industry. She enjoys designing efficient solutions, improving user experiences, and 
                                         leveraging technology to make complex processes more effective.
                                    </p>
-                                   <br></br>
+                                   
                                    <p className={styles.aboutMeDescription}>
                                         Outside of her professional career, Sarah is passionate about giving back to her community, 
                                         exploring new places, and spending time outdoors. As a lifelong equestrian, she has developed 
                                         a deep appreciation for discipline, perseverance, and dedication — values that continue to 
                                         influence her personal and professional life.
                                    </p>
-                                   <br></br>
+                                   
                                    <p className={styles.aboutMeDescription}>
                                         Sarah believes that success is built through integrity, kindness, leadership, and a willingness 
                                         to embrace new challenges. She is always seeking opportunities to learn, collaborate, and create 
