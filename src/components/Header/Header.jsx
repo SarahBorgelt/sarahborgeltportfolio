@@ -6,7 +6,9 @@ export default function Header() {
 
      return (
           <>
-               <img className={styles.logo} src={Logo} alt="Logo" />
+               <header className={styles.headerContainer}>
+                    <img className={styles.logo} src={Logo} alt="Logo" />
+               </header>
           </>
      )
 }

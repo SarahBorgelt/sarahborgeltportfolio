@@ -72,3 +72,64 @@
      max-width: 40rem;
      text-align: center;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+     .mainFooterSection {
+          padding: 1rem;
+          text-align: center;
+     }
+
+     .footerHeading {
+          font-size: 1.5rem;
+          padding: 0.5rem;
+     }
+
+     .footerText {
+          font-size: 0.95rem;
+          padding: 0 1rem;
+          line-height: 1.5;
+     }
+
+     .contactButton {
+          padding: 15px 30px;
+          font-size: 1rem;
+          margin: 1rem auto;
+     }
+
+     .socialLinks {
+          flex-wrap: wrap;
+          gap: 1.25rem;
+          padding: 0 1rem;
+          margin-top: 1.5rem;
+     }
+
+     .socialLinks a {
+          font-size: 2rem;
+     }
+
+     .socialmediainfo {
+          max-width: 90%;
+          padding: 0 1rem;
+     }
+
+     .copyright {
+          font-size: 0.9rem;
+          padding: 1rem 0.5rem;
+     }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+     .socialLinks {
+          gap: 1rem;
+     }
+
+     .socialLinks a {
+          font-size: 1.8rem;
+     }
+
+     .footerHeading {
+          font-size: 1.25rem;
+     }
+}

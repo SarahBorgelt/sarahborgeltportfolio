@@ -1,42 +1,109 @@
 .navbar {
      position: sticky;
-     padding: 1.5rem;
-     background-color: #4f79bb; 
+     top: 0;
+     z-index: 10;
+     padding: 0.5rem;
+     background-color: #4f79bb;
 }
 
 .nav {
      display: flex;
      flex-direction: row;
      justify-content: space-evenly;
+     align-items: center;
      background-color: navy;
      border-radius: 15px;
-     padding: 1rem;
-     align-items: stretch;
+     padding: 0.5rem;
      border: 0.5px solid white;
 }
 
-.link {
-     color: white;
-     text-decoration: none;
-}
-
+.link,
 .active {
      color: white;
      text-decoration: none;
+     padding: 0.5rem 1rem;
+     border-radius: 1rem;
+     transition: 0.25s ease;
+}
+
+.active {
      font-weight: bold;
 }
 
-.link:hover {
+.link:hover,
+.active:hover {
      font-weight: bold;
      text-decoration: underline;
      cursor: pointer;
      background-color: white;
      color: navy;
-     border: 0.05rem solid white;
-     border-radius: 1rem;
 }
 
 .divider {
      width: 0.05rem;
+     height: 1.5rem;
      background-color: white;
+}
+
+/* mobile phones */
+@media (max-width: 768px) {
+
+     .navbar {
+          padding: 1rem;
+          background-color: transparent;
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          background-color: #4f79bb;
+     }
+
+     .nav {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+          width: 85%;
+          max-width: 350px;
+          margin: 0 auto;
+          padding: 1.25rem;
+          background: linear-gradient(
+               145deg,
+               #0a1f44,
+               navy
+          );
+          border-radius: 20px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+     }
+
+     .link,
+     .active {
+          width: 85%;
+          text-align: center;
+          padding: 0.75rem 1rem;
+          border-radius: 12px;
+          font-size: 1.1rem;
+          letter-spacing: 0.05rem;
+          transition: all 0.25s ease;
+     }
+
+     .link {
+          color: white;
+     }
+
+     .active {
+          background-color: #4f79bb;
+          font-weight: bold;
+          box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+     }
+
+     .link:hover,
+     .active:hover {
+          background-color: white;
+          color: navy;
+          transform: translateY(-2px);
+          text-decoration: none;
+     }
+
+     .divider {
+          display: none;
+     }
 }

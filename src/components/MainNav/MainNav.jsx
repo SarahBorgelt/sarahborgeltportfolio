@@ -4,8 +4,8 @@ import styles from './MainNav.module.css';
 export default function MainNav() {
 
      return (
-          <aside className={styles.navbar}>
-               <nav className={styles.nav}>
+          <header className={styles.navbar}>
+               <nav className={styles.nav} aria-label="Main navigation">
 
                     <NavLink 
                          to="/"
@@ -47,6 +47,6 @@ export default function MainNav() {
                          Contact
                     </NavLink>
                </nav>
-          </aside>
+          </header>
      )
 }

@@ -76,7 +76,7 @@ export default function Footer() {
                          </a>
                     </div>
                     <p className={`${styles.footerText} ${styles.italics} ${styles.socialmediainfo}`}>
-                         Connect with Sarah Borgelt on LinkedIn, Facebook, Instagram, Github, Medium, and Dev.to to explore her professional 
+                         Connect with Sarah Borgelt on LinkedIn, Facebook, Instagram, GitHub, Medium, and Dev.To to explore her professional 
                          experience, software development projects, and technical writing.
                     </p>
                </div>

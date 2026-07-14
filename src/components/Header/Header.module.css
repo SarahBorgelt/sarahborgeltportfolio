@@ -1,21 +1,44 @@
 .headerContainer {
      display: flex;
-     flex-direction: column;
-     max-width: 12rem;
-     margin-left: 2rem;
-     margin-top: 1rem;
+     justify-content: center;
      align-items: center;
+     width: 100%;
+     padding: 1rem;
+     box-sizing: border-box;
 }
 
 .logo {
-     max-width: 25rem;
-     align-items: center;
-     border-radius: 50%;
-     width: 100%;
+     width: clamp(8rem, 25vw, 25rem);
+/* width: clamp(8rem, 20vw, 25rem) means:
+- minimum: 8rem (small phones)
+- preferred: 20% of viewport width
+- maximum: 25rem (large screens) */
      height: auto;
+     border-radius: 50%;
      padding: 0.5rem;
      border: 0.5px solid navy;
-     margin: 1rem;
      background-color: white;
      filter: drop-shadow(0 3px 8px white);
+}
+
+/* mobile phones */
+@media (max-width: 768px) {
+
+     .headerContainer {
+          padding: 0.75rem;
+     }
+
+     .logo {
+          width: 9rem;
+          padding: 0.4rem;
+     }
+}
+
+/*Small mobile phones*/
+@media (max-width: 400px) {
+
+     .logo {
+          width: 7rem;
+     }
+
 }
