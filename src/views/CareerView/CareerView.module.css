@@ -56,18 +56,20 @@
      border:1px solid white;
      border-radius:1rem;
      padding:1.5rem;
-     width: 37.8%;
+     width: 42%;
      max-width: 22rem;
 }
 
 
 .timelineItem:nth-child(even) .card {
-     margin-left:auto;
+     margin-left:52%;
+     justify-content: flex-end;
 }
 
 
 .timelineItem:nth-child(odd) .card {
-     margin-right:auto;
+     margin-right:52%;
+     justify-content: flex-start;
 }
 
 .careerPageLayout {

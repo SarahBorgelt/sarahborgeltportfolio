@@ -1,5 +1,8 @@
-* {
-     margin: 0 0;
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+     margin: 0;
      padding: 0;
 }
 
@@ -29,7 +32,6 @@ main {
 #app {
      width: 100%;
      min-height: 100vh;
-     overflow-x: hidden;
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: auto 2fr auto;
@@ -56,7 +58,7 @@ main {
      background-color: #4f79bb;
      padding: 5px;
      text-align: center;
-     width: 100vw;       /* full viewport width */
+     width: 100%;       
      margin: 0;
      padding: 0;
      box-sizing: border-box;
