@@ -41,5 +41,83 @@
 }
 
 .intro {
-     width: 37.5rem;
+     width: 100%;
+     max-width: 37.5rem;
+}
+
+@media (max-width: 1024px) {
+     .aboutMe {
+          gap: 2rem;
+          padding: 2rem;
+     }
+
+     .profileImage {
+          width: 20rem;
+     }
+
+     .intro {
+          width: 100%;
+          max-width: 40rem;
+     }
+
+     .name {
+          font-size: 2.5rem;
+     }
+
+     .description {
+          font-size: 1.1rem;
+     }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+     .aboutMe {
+          flex-direction: column;
+          justify-content: flex-start;
+          text-align: center;
+          padding: 2rem 1.25rem;
+          gap: 2rem;
+     }
+
+     .profileImage {
+          width: min(90vw, 20rem);
+     }
+
+     .intro {
+          width: 100%;
+     }
+
+     .name {
+          font-size: 2rem;
+          letter-spacing: normal;
+     }
+
+     .description {
+          max-width: 100%;
+          font-size: 1rem;
+          text-align: left;
+          padding: 1rem;
+     }
+}
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width: 480px) {
+     .aboutMe {
+          padding: 1.5rem 1rem;
+     }
+
+     .profileImage {
+          width: 100%;
+          max-width: 18rem;
+     }
+
+     .name {
+          font-size: 1.7rem;
+     }
+
+     .description {
+          font-size: 0.95rem;
+     }
 }

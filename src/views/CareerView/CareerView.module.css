@@ -6,7 +6,8 @@
      padding: 1.5rem;
      color: white;
      line-height: 1.6;
-     width: 60%;
+     width: 100%;
+     max-width: 900px;
 }
 
 .title {
@@ -25,7 +26,8 @@
      position: relative;
      max-width: 900px;
      margin: 2rem auto;
-     width: 40%;
+     width: 100%;
+     max-width: 700px;
 }
 
 .timelineItem {
@@ -33,6 +35,7 @@
      justify-content: center;
      position: relative;
      margin-bottom: 4rem;
+     margin-right: 1rem;
 }
 
 .icon {
@@ -53,17 +56,18 @@
      border:1px solid white;
      border-radius:1rem;
      padding:1.5rem;
-     width:30%;
+     width: 37.8%;
+     max-width: 22rem;
 }
 
 
 .timelineItem:nth-child(even) .card {
-     margin-left:50%;
+     margin-left:auto;
 }
 
 
 .timelineItem:nth-child(odd) .card {
-     margin-right:50%;
+     margin-right:auto;
 }
 
 .careerPageLayout {
@@ -94,4 +98,126 @@
      display: block;
      margin: 0 auto;
      border: 0.0625rem solid white;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+
+     .careerPageLayout {
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+     }
+
+     .timeline,
+     .careerDescription {
+          width: 90%;
+     }
+
+     .card {
+          width: 38%;
+     }
+
+     .careerHeadshot {
+          width: min(100%, 26rem);
+     }
+
+     .title {
+          font-size: 2.5rem;
+     }
+}
+
+/* mobile phone */
+@media (max-width: 768px) {
+
+     .title {
+          font-size: 2rem;
+          padding: 1rem;
+          letter-spacing: normal;
+     }
+
+     .careerPageLayout {
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+          padding: 0 1rem;
+     }
+
+     .timeline {
+          width: 100%;
+          margin: 0;
+     }
+
+     .careerDescription {
+          width: 100%;
+          padding: 1.25rem;
+          font-size: 1rem;
+          box-sizing: border-box;
+     }
+
+     .timelineItem {
+          justify-content: flex-start;
+          padding-left: 3rem;
+          margin-bottom: 2rem;
+     }
+
+     .timelineItem::after {
+          left: 1rem;
+     }
+
+     .icon {
+          left: 1rem;
+          transform: translateX(-50%);
+          font-size: 1.5rem;
+          padding: .75rem;
+     }
+
+     .card {
+          width: 100%;
+          margin: 0 !important;
+          padding: 1rem;
+          box-sizing: border-box;
+     }
+
+     .careerHeadshot {
+          width: 100%;
+          max-width: 20rem;
+     }
+
+     .timelineItem:nth-child(even) .card,
+     .timelineItem:nth-child(odd) .card {
+          margin-left: 0;
+          margin-right: 0;
+     }
+
+     .card {
+          width: 100%;
+          padding: 1rem;
+          box-sizing: border-box;
+     }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+     .title {
+          font-size: 1.6rem;
+     }
+
+     .careerDescription {
+          font-size: .95rem;
+     }
+
+     .card h2 {
+          font-size: 1.2rem;
+     }
+
+     .card p,
+     .card span {
+          font-size: .95rem;
+     }
+
+     .careerHeadshot {
+          max-width: 16rem;
+     }
 }
