@@ -38,6 +38,11 @@
       content="https://sarahborgelt.com/ProfessionalHeadshot.png" 
       />
 
+    <meta 
+      property="og:image:alt" 
+      content="Professional headshot of Sarah Borgelt, Software Engineer and Data Engineer"
+    />
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Sarah Borgelt | Software Engineer & Data Engineer" />
     <meta name="twitter:description" content="Connect with Sarah Borgelt to discuss projects, opportunities, or collaborations in software and data engineering." />
@@ -45,16 +50,20 @@
     <meta property="og:site_name" content="Sarah Borgelt" />
     <meta property="og:locale" content="en_US" />
 
+
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Sarah Borgelt",
-          "url": "https://sarahborgelt.com/",
-          "jobTitle": "Software Engineer & Data Engineer",
-          "description": "Software Engineer and Data Engineer specializing in Java, JavaScript, React, SQL, ETL pipelines, HTML, CSS, and modern web development.",
-          "image": "https://sarahborgelt.com/ProfessionalHeadshot.png",
-          "sameAs": [
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sarahborgelt.com/#person",
+      "name": "Sarah Borgelt",
+      "url": "https://sarahborgelt.com/",
+      "jobTitle": "Software Engineer & Data Engineer",
+      "description": "Software Engineer and Data Engineer specializing in Java, JavaScript, React, SQL, ETL pipelines, HTML, CSS, and modern web development.",
+      "image": "https://sarahborgelt.com/ProfessionalHeadshot.png",
+      "sameAs": [
             "https://github.com/SarahBorgelt",
             "https://www.linkedin.com/in/sarahborgelt",
             "https://medium.com/@borgelt.sarah",
@@ -66,27 +75,37 @@
             "https://www.instagram.com/borgelts97/",
             "https://www.facebook.com/sarah.borgelt.5/",
             "https://lnk.bio/sarahborgelt"
-          ],
-          "knowsAbout": [
-              "Java",
-              "JavaScript",
-              "React",
-              "SQL",
-              "Spring Boot",
-              "Data Engineering",
-              "ETL Pipelines",
-              "SQL Server",
-              "PostgreSQL",
-              "HTML",
-              "CSS",
-              "Software Engineering",
-              "Software Development",
-              "SQL Server Integration Services",
-              "SSIS",
-              "Visual Studio",
-              "Visual Studio Code"
-            ]
-        }
+      ],
+      "knowsAbout": [
+        "Java",
+        "JavaScript",
+        "React",
+        "SQL",
+        "Spring Boot",
+        "Data Engineering",
+        "ETL Pipelines",
+        "SQL Server",
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "Software Engineering",
+        "Software Development",
+        "SSIS",
+        "Visual Studio",
+        "Visual Studio Code"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sarahborgelt.com/#website",
+      "url": "https://sarahborgelt.com/",
+      "name": "Sarah Borgelt",
+      "publisher": {
+        "@id": "https://sarahborgelt.com/#person"
+      }
+    }
+  ]
+}
 </script>
   </head>
   <body>
