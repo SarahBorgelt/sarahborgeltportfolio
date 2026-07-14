@@ -35,15 +35,14 @@
 .contactMeForm {
      display: grid;
      grid-template-columns: 1fr 1fr;
-     grid-template-rows: auto auto auto auto;
-     border-radius: 1rem; 
+     border-radius: 1rem;
      background-color: navy;
-     width: 75%;
-     height: auto;
+     width: min(75%, 900px);
      margin: 2rem auto;
      gap: 1rem;
      padding: 2rem;
-     grid-template-areas: 
+     box-sizing: border-box;
+     grid-template-areas:
           "firstName lastName"
           "phoneNumber emailAddress"
           "message message"
@@ -127,3 +126,75 @@
      padding: 0.5rem;
 }
 
+/*Mobile Phones*/
+@media (max-width: 768px) {
+
+     .title {
+          font-size: 2rem;
+          padding-bottom: .5rem;
+     }
+
+
+     .contactMeForm {
+          width: 90%;
+          padding: 1.25rem;
+          gap: 1rem;
+          grid-template-columns: 1fr;
+          grid-template-areas:
+               "firstName"
+               "lastName"
+               "phoneNumber"
+               "emailAddress"
+               "message"
+               "submitButton";
+     }
+
+
+     .contactMeForm input,
+     .contactMeForm textarea {
+          font-size: 1rem;
+          padding: .9rem;
+     }
+
+
+     .contactMeForm label {
+          font-size: .9rem;
+          padding: .25rem;
+     }
+
+
+     .submitButton {
+          width: 80%;
+          padding: .9rem 1rem;
+          font-size: 1rem;
+     }
+
+
+     .success,
+     .error {
+          width: 85%;
+          margin: 1rem auto;
+          font-size: .95rem;
+     }
+
+}
+
+/*Small Mobile Phones*/
+@media (max-width: 400px) {
+
+     .contactMeForm {
+          width: 95%;
+          padding: 1rem;
+     }
+
+
+     .title {
+          font-size: 1.75rem;
+     }
+
+
+     .submitButton {
+          width: 100%;
+     }
+
+}
